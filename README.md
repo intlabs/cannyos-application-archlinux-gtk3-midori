@@ -29,4 +29,4 @@ This repository contains the *Dockerfile* and *associated files* for setting up 
 
 * this will run and drop you into a session with privileges to run FUSE:
 
-`docker run -i -t --rm  --privileged=true --lxc-conf="native.cgroup.devices.allow = c 10:229 rwm"  --volume "/CannyOS/build/cannyos-application-archlinux-gtk3-midori":"/CannyOS/Host"  --name "cannyos-application-archlinux-gtk3-midori"  --user "root"  -p 80 intlabs/cannyos-application-archlinux-gtk3-midori`
+`docker run -i -t -d  --privileged=true --lxc-conf="native.cgroup.devices.allow = c 10:229 rwm"  --volume "/CannyOS/build/cannyos-application-archlinux-gtk3-midori":"/CannyOS/Host"  --name "cannyos-application-archlinux-gtk3-midori"  --user "root"  -p 80 intlabs/cannyos-application-archlinux-gtk3-midori`
