@@ -22,7 +22,7 @@
 FROM intlabs/cannyos-base-archlinux-gtk3
 
 # Set environment variables.
-ENV HOME /root
+ENV HOME /root/
 
 # Set the working directory
 WORKDIR /
